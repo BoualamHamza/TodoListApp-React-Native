@@ -40,14 +40,12 @@
 
 ## 📍 Overview
 
-HTTPStatus Exception: 401
-
+This a simple TodoList in React-native  
 ---
 
 ## 📦 Features
 
-HTTPStatus Exception: 401
-
+CRUD operations
 ---
 
 
@@ -109,16 +107,6 @@ HTTPStatus Exception: 401
 
 ## 🚀 Getting Started
 
-***Dependencies***
-
-Please ensure you have the following dependencies installed on your system:
-
-`- ℹ️ Dependency 1`
-
-`- ℹ️ Dependency 2`
-
-`- ℹ️ ...`
-
 ### 🔧 Installation
 
 1. Clone the TodoListApp-React-Native repository:
@@ -139,7 +127,7 @@ npm install
 ### 🤖 Running TodoListApp-React-Native
 
 ```sh
-node app.js
+npm  start 
 ```
 
 ### 🧪 Tests
@@ -148,13 +136,6 @@ npm test
 ```
 
 ---
-
-
-## 🛣 Roadmap
-
-> - [X] `ℹ️  Task 1: Implement X`
-> - [ ] `ℹ️  Task 2: Implement Y`
-> - [ ] `ℹ️ ...`
 
 
 ---
