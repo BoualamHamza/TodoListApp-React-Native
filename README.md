@@ -41,13 +41,38 @@
 ## 📍 Overview
 
 This a simple TodoList in React-native  
+Here's a summary of the `TodoList` and `TodoItem` components:
+
+### TodoList Component:
+
+- The `TodoList` component is responsible for managing and displaying a to-do list.
+- It uses the `useState` hook to manage state variables like `newTodoText`, `todos`, `count`, and `currentFilter`.
+- It includes functions for CRUD operations, such as `addNewTodo`, `deleteTodo`, `updateItem`, `checkAll`, and `checkNone`.
+- The `useEffect` hook is used to update the `count` when there are changes in the `todos` array.
+- It provides buttons to filter and display tasks based on their completion status.
+- It renders a list of to-do items using a `FlatList`.
+- It includes buttons to check all tasks or uncheck all tasks.
+
+### TodoItem Component:
+
+- The `TodoItem` component represents an individual to-do item within the list.
+- It uses the `useState` hook to manage the `isEnabled` state, which determines whether the to-do item is marked as done or not.
+- It updates the text style based on the `isEnabled` state to show a line-through effect for completed tasks.
+- It renders a text description of the to-do item, a Switch component to mark it as done or not, and a delete button.
+- The `useEffect` hook is not used in the provided code but can be used to keep the local state in sync with changes in the props, especially for the `done` property.
+
+Both components work together to create a functional to-do list application with the ability to add, delete, update, and filter tasks, as well as check or uncheck all tasks.
 ---
 
 ## 📦 Features
 
 CRUD operations
 ---
-
+**updateCount()**:  is used to update the count state when the number of completed to-do items changes.
+**deleteTodo()**:  is used to delete a to-do item by filtering it out of the todos array and updating the count state.
+**addNewTodo()**: is called to add a new to-do item to the list. It first checks if the newTodoText is empty and logs a message if it is. Then, it creates a new to-do object and appends it to the todos array, resetting the newTodoText input field in the process.
+**updateItem()** is used to update the completion status of a to-do item by toggling the done property. It also updates the count state accordingly.
+checkAll marks all to-do items as completed.
 
 ## 📂 Repository Structure
 
@@ -90,8 +115,9 @@ CRUD operations
 
 | File                                                                                                         | Summary                   |
 | ---                                                                                                          | ---                       |
-| [TodoList.js](https://github.com/BoualamHamza/TodoListApp-React-Native.git/blob/main/components/TodoList.js) | HTTPStatus Exception: 401 |
-| [TodoItem.js](https://github.com/BoualamHamza/TodoListApp-React-Native.git/blob/main/components/TodoItem.js) | HTTPStatus Exception: 401 |
+| [TodoList.js](https://github.com/BoualamHamza/TodoListApp-React-Native.git/blob/main/components/TodoList.js) | List contains all the todoItem it uses helpers.js to initialize the content |
+| [TodoItem.js](https://github.com/BoualamHamza/TodoListApp-React-Native.git/blob/main/components/TodoItem.js) |- The `TodoItem` component represents an individual to-do item within the list.
+ |
 
 </details>
 
