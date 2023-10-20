@@ -60,8 +60,9 @@ Here's a summary of the `TodoList` and `TodoItem` components:
 - It updates the text style based on the `isEnabled` state to show a line-through effect for completed tasks.
 - It renders a text description of the to-do item, a Switch component to mark it as done or not, and a delete button.
 - The `useEffect` hook is not used in the provided code but can be used to keep the local state in sync with changes in the props, especially for the `done` property.
+- Both components work together to create a functional to-do list application with the ability to add, delete, update, and filter tasks, as well as check or uncheck all tasks.
 
-Both components work together to create a functional to-do list application with the ability to add, delete, update, and filter tasks, as well as check or uncheck all tasks.
+
 ---
 
 ## 📦 Features
